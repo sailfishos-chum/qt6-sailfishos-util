@@ -1,8 +1,8 @@
 #!/bin/sh
 
-if [ -f "${QT6_EMV}" ] ; then
+if [ -f "${QT6_ENV}" ] ; then
         echo Overriding environment with user specified values
-        source "${QT6_EMV}"
+        source "${QT6_ENV}"
 elif [ -f "${XDG_CONFIG_HOME}"/qt6-start.env ] ; then
         echo Overriding environment with user specified values
         source "${XDG_CONFIG_HOME}"/qt6-start.env
