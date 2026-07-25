@@ -20,7 +20,7 @@ Requires: kf6-kirigami
 # See macros.qt6 where the directories are specified
 
 install -Dpm755 qt6-start.sh      %{buildroot}%{_bindir}/qt6-start.sh
-install -Dpm644 99-qt6.conf %{buildroot}/var/lib/environment/nemo/99-qt6.conf
+install -Dpm644 qt6-start-env.sh %{buildroot}/%{_sysconfdir}/profile.d/qt6-start-env.sh
 
 %files
 %{_bindir}/qt6-start.sh

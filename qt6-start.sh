@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#Source the global fiel first
+source /etc/profile.d/qt6-start-env.sh
+
 if [ -f "${QT6_ENV}" ] ; then
         echo Overriding environment with user specified values
         source "${QT6_ENV}"
