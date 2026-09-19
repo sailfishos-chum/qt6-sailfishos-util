@@ -1,5 +1,4 @@
 Name: qt6-sailfishos-util
-# This version MUST remain in sync with Qt6 versions!
 Version: 1.0.0
 Release: 1%{?dist}
 Summary: Qt6 sailfish utility scripts
@@ -9,6 +8,7 @@ Source0: %{name}-%{version}.tar.bz2
 
 Requires: kf6-qqc2-breeze-style
 Requires: kf6-kirigami
+Requires: qt6-sfos-maliit-platforminputcontext
 
 %description
 %{summary}.
